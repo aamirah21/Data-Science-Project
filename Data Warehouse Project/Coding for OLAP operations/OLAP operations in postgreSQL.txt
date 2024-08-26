@@ -1,0 +1,11 @@
+Slicing
+SELECT major_course, SUM(men) AS total_male_students, SUM (women) AS total_female_students
+FROM recentlygrads
+GROUP BY major_course;
+
+Pivot
+SELECT major_course,
+	ROUND(AVG(CASE WHEN men > 0 THEN median_salary ELSE NULL END), 2) AS male_median_salary,
+	ROUND(AVG(CASE WHEN women > 0 THEN median_salary ELSE NULL END), 2) AS female_median_salary
+FROM recentlygrads
+GROUP BY major_course;

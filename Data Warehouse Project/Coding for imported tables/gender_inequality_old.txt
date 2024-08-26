@@ -1,0 +1,83 @@
+CREATE TABLE allage
+(
+numbering numeric,
+major_code numeric,
+major_name text,
+major_course text,
+Total_students numeric, 
+Employed_grad numeric, 
+Employed_full_time_year_round numeric,
+Unemployed_grad numeric,
+Unemployment_rate numeric,
+Median_salary numeric,
+P25th_salary numeric,
+P75th_salary numeric
+);
+
+CREATE TABLE womensstem
+(
+numbering numeric,
+popularity_rank numeric,
+major_code numeric,
+major_name text,
+major_course text,
+total_students numeric,
+men numeric,
+women numeric,
+sharewomen numeric,
+median_salary numeric
+);
+
+
+CREATE TABLE gradstudent
+(
+numbering numeric,
+major_code numeric,
+major_name text,
+major_course text,
+Grad_total numeric, 
+Grad_sample_size numeric,
+Grad_employed numeric, 
+Grad_full_time_year_round numeric,
+Grad_unemployed numeric,
+Grad_unemployment_rate numeric,
+Grad_median_salary numeric,
+Grad_P25_salary numeric,
+Grad_P75_salary numeric,
+Nongrad_total numeric,
+Nongrad_employed numeric,
+Nongrad_full_time_year_round numeric,
+Nongrad_unemployed numeric,
+Nongrad_unemployment_rate numeric,
+Nongrad_median_salary numeric,
+Nongrad_P25_salary numeric,
+Nongrad_P75_salary numeric,
+Grad_share numeric,
+diff_salary numeric
+);
+
+CREATE TABLE recentlygrads
+(
+numbering numeric,
+popularity_rank numeric,
+major_code numeric,
+major_name text,
+major_course text,
+total_students numeric, 
+Sample_size numeric, 
+Men numeric,
+Women numeric,
+ShareWomen numeric,
+employed_grad numeric,
+full_time numeric,
+part_time numeric,
+Full_time_year_round numeric,
+unemployed_grad numeric,
+unemployment_rate numeric,
+median_salary numeric,
+P25th_salary numeric,
+P75th_salary numeric,
+College_jobs numeric,
+Non_college_jobs numeric,
+Low_wage_jobs numeric
+);
